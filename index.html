@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d7c1a76760.js" crossorigin="anonymous"></script>
+
+    <title>Shopping cart</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Shopping cart</h1>
+        </div>
+        <div class="items">
+            <div class="remove">
+                <h3>Item 1</h3>
+                <p class="child">Lorem ipsum dolor sit amet conaiores enim.</p>
+                <form >
+                    <input id ="exit"type="button"  value="X">
+                    <input type="text"  name="display" class="display">
+                    <input type="button" id="test1" value="+" onclick="display.value = Math.floor(display.value)+1">
+                    <input type="button" id="test1" value="-" onclick="display.value = Math.floor(display.value)-1">
+                    <input type="button" id="price" value="price = 120" onclick="somme.value = Math.floor(display.value) * 120">
+                    <input type="text"  name="somme" class="somme" >
+
+
+
+                </form>
+                <button class="btn"><i class="fa-solid fa-heart"></i></button>
+
+                
+            </div>
+            <div class = "remove2">
+                <h3>Item 2</h3>
+                <p>Lorem ipsum dolor sit amet conaiores enim.</p>
+                <form>
+                    <input id ="exit1"type="button"  value="X">
+                    <input type="text" name="display1">
+                    <input type="button" value="+" onclick="display1.value = Math.floor(display1.value)+1">
+                    <input type="button" value="-" onclick="display1.value = Math.floor(display1.value)-1">
+                    <input type="button" id="price" value="price = 230" onclick="somme1.value = Math.floor(display1.value) * 230">
+                    <input type="text"  name="somme1" class="somme1" >
+
+                </form>
+                <button class="btn2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="remove3">
+                <h3>Item 3</h3>
+                <p>Lorem ipsum dolor sit amet conaiores enim.</p>
+                <form>
+                    <input id ="exit2"type="button"  value="X">
+                    <input type="text" name="display2">
+                    <input type="button" value="+" onclick="display2.value = Math.floor(display2.value)+1">
+                    <input type="button" value="-" onclick="display2.value = Math.floor(display2.value)-1">
+                    <input type="button" id="price" value="price = 100" onclick="somme2.value = Math.floor(display2.value) * 100">
+                    <input type="text"  name="somme2" class="somme2" >
+                   
+                </form>
+                <button class="btn3"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <input type="button" id="price" value="Sommetotale" onclick="Totalsomme.value = somme2.value ">
+            <input type="text"  name="Totalsomme" class="totalsomme" >
+            <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>
